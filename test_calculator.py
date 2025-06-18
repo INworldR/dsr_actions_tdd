@@ -1,7 +1,9 @@
 # test_calculator.py
 
 import unittest
+
 from calculator import Calculator
+
 
 class TestCalculator(unittest.TestCase):
     """Test cases for the Calculator class."""
@@ -39,5 +41,6 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.calc.divide(10, 0)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

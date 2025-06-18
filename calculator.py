@@ -1,6 +1,7 @@
 # calculator.py
 import math
 
+
 class Calculator:
     """A simple calculator class."""
 
@@ -18,7 +19,7 @@ class Calculator:
 
     def divide(self, a, b):
         """Return the division of a by b.
-        
+
         Raises:
             ValueError: If b is zero.
         """
@@ -28,9 +29,9 @@ class Calculator:
 
     def sqrt(self, a):
         """Return the square root of a.
-        
+
         Raises:
-            ValueError: If a is negative.
+            ValueError: If the value ofa is negative.
         """
         if a < 0:
             raise ValueError("Cannot calculate square root of negative number")
