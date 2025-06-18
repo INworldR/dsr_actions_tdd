@@ -41,6 +41,20 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.calc.divide(10, 0)
 
+    def test_sqrt(self):
+        """Test the sqrt method."""
+        self.assertEqual(self.calc.sqrt(4), 2)
+        self.assertEqual(self.calc.sqrt(0), 0)
+        self.assertAlmostEqual(self.calc.sqrt(2), 1.4142135623730951)
+        self.assertAlmostEqual(self.calc.sqrt(9), 3)
+
+    def test_sqrt_negative(self):
+        """Test that calculating square root of negative number raises a ValueError."""
+        with self.assertRaises(ValueError):
+            self.calc.sqrt(-1)
+        with self.assertRaises(ValueError):
+            self.calc.sqrt(-4)
+
 
 if __name__ == "__main__":
     unittest.main()
