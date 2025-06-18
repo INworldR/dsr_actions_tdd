@@ -31,7 +31,7 @@ class Calculator:
         """Return the square root of a.
 
         Raises:
-            ValueError: If the value ofa is negative.
+            ValueError: If the value of a is negative.
         """
         if a < 0:
             raise ValueError("Cannot calculate square root of negative number")
